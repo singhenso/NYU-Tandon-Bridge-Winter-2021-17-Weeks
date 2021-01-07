@@ -1,4 +1,4 @@
-#  NYU Tandon School of Engineering - Bridge to CS Winter 2021 - 17 Week
+#  NYU Tandon School of Engineering - Bridge to CS Winter 2021 -  17 weeks |  from 1/4 to 4/30
 
 ![NYU Tandon School of Engineering Logo](./src/images/nyu_logo.jpg "NYU Tandon School of Engineering Logo Bridge to CS Spring 2018")
 
@@ -58,3 +58,10 @@ thread concurrency, deadlocks, and memory management.
 * Processes & Threads
 * Thread concurrency and deadlocks
 * Memory Management
+
+## Contents
+* Week 1: Computer Hardware, Number Systems, and Logic
+  * [Module 1: Fundamentals of System Hardware](week_1/module_1/fundamentals_of_system_hardware.md)
+  * [Module 2: Positional Number Systems](week_1/module_2/number_systems.md)
+  * Discrete Math: Propositional and Predicate Logic
+* Week 2
