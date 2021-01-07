@@ -130,7 +130,7 @@ What comes before 100?
 - A represents the number we usually call "ten"
 - The highest single digit is ***F*** which represents "fifteen"
 
-
+---
 
 ## Converting Between Different Bases
 
@@ -139,6 +139,7 @@ This can be counted very easily by fingers that the professor used in the Lectur
 
 ***(13)<sub>10</sub> = (15)<sub>8</sub> = (23)<sub>5</sub> = (1101)<sub>2</sub> = (D)<sub>16</sub>***
 
+---
 
 ## Base Conversions
 
@@ -148,7 +149,7 @@ N = Number:
 1. N in base b &#x2192; N in decimal
 2. N in decimal &#x2192; N in base B
 
-This method allows you to convert numbers to different bases.
+This method allows you to convert numbers to different bases..
 
 #### 1. N in base b &#x2192; N in decimal
 
