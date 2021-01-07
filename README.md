@@ -1,6 +1,6 @@
 #  NYU Tandon School of Engineering - Bridge to CS Winter 2021 -  17 weeks |  from 1/4 to 4/30
 
-![NYU Tandon School of Engineering Logo](./src/images/nyu_logo.jpg "NYU Tandon School of Engineering Logo Bridge to CS Spring 2018")
+![NYU Tandon School of Engineering Logo](./images/nyu_logo.jpg "NYU Tandon School of Engineering Logo Bridge to CS Spring 2018")
 
 Want to know more about my background and/or collaborate? Let's connect through LinkedIn!
 
