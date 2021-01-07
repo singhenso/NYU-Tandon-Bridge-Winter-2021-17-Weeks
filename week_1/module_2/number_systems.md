@@ -15,6 +15,7 @@
   - [Base Conversions](#base-conversions)
       - [1. N in base b &#x2192; N in decimal](#1-n-in-base-b--n-in-decimal)
       - [2. N in decimal &#x2192; N in base B](#2-n-in-decimal--n-in-base-b)
+      - [3. N in Binary &#x2192; N in base Hexadecimal](#3-n-in-binary--n-in-base-hexadecimal)
     - [Additional Resources](#additional-resources)
     - [Citing Sources | Credit](#citing-sources--credit)
 
@@ -156,7 +157,9 @@ This method allows you to convert numbers to different bases..
 ![Counting in base 5](/images/w13.jpg)
 
 #### 2. N in decimal &#x2192; N in base B
+![Counting in base 5](/images/w14.jpg)
 
+#### 3. N in Binary &#x2192; N in base Hexadecimal
 
 ### Additional Resources
 * [Base 5 Number System - Basics | Youtube](https://www.youtube.com/watch?v=qGi29E9q_f0)
