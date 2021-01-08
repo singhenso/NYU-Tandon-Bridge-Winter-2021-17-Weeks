@@ -19,6 +19,7 @@
     - [Adding and Subtracting](#adding-and-subtracting)
     - [Signed Numbers](#signed-numbers)
     - [Additional Resources](#additional-resources)
+  - [Calculator:](#calculator)
     - [Citing Sources | Credit](#citing-sources--credit)
 
 ### Concept
@@ -184,7 +185,6 @@ Located below is the way to represent signed numbers using only 0s and 1s.
 
 **Sign and Magnitude**
 
-![Counting in base 5](/images/w18.jpg)
 
 **Two's Complement**
 
@@ -193,6 +193,8 @@ in a k-bit two's complement representation of a number:
 
 - A positive integer is represented in its (k-1)-bit unsigned binary representation, padded with a 0 to its left.
 - The sub of a number and its additive inverse must equal 2<sup>k</sup>
+![Counting in base 5](/images/w2222.jpg)
+![Counting in base 5](/images/w21.jpg)
 
 ### Additional Resources
 * [Base 5 Number System - Basics | Youtube](https://www.youtube.com/watch?v=qGi29E9q_f0)
@@ -203,6 +205,9 @@ in a k-bit two's complement representation of a number:
 * [Number Base Conversion Practice | Khan Academy Video](https://youtu.be/Fpm-E5v6ddc)
 * [Computer Number Systems | Tutorials Point](https://www.tutorialspoint.com/computer_fundamentals/computer_number_system.htm)
 
+
+## Calculator:
+* [Twos complement calculator](https://www.omnicalculator.com/math/twos-complement)
 
 
 ### Citing Sources | Credit
