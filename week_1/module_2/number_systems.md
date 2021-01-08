@@ -16,6 +16,8 @@
       - [1. N in base b &#x2192; N in decimal](#1-n-in-base-b--n-in-decimal)
       - [2. N in decimal &#x2192; N in base B](#2-n-in-decimal--n-in-base-b)
       - [3. N in Binary &#x2192; N in base Hexadecimal](#3-n-in-binary--n-in-base-hexadecimal)
+    - [Adding and Subtracting](#adding-and-subtracting)
+    - [Signed Numbers](#signed-numbers)
     - [Additional Resources](#additional-resources)
     - [Citing Sources | Credit](#citing-sources--credit)
 
@@ -160,6 +162,37 @@ This method allows you to convert numbers to different bases..
 ![Counting in base 5](/images/w14.jpg)
 
 #### 3. N in Binary &#x2192; N in base Hexadecimal
+
+- This is different from the rest because we treat each digit independently. 
+- We just translate a number into the 4 bit binary equivalent. 3 &#x2192; 0011 
+
+When going from binary to hex, we go left to right and group the digits into 4. If for some reason a digit is missing from the furthest left side, then add 0.
+
+<code>(0011  1011  1001)<sub>2</sub> = (3b9)<sub>16</sub></code>
+![Counting in base 5](/images/w15.jpg)
+
+The following is Binary to Hexadecimal Conversion
+![Counting in base 5](/images/w16.jpg)
+
+### Adding and Subtracting
+
+![Counting in base 5](/images/w17.jpg)
+
+### Signed Numbers
+
+Located below is the way to represent signed numbers using only 0s and 1s.
+
+**Sign and Magnitude**
+
+![Counting in base 5](/images/w18.jpg)
+
+**Two's Complement**
+
+Most common representation method.
+in a k-bit two's complement representation of a number:
+
+- A positive integer is represented in its (k-1)-bit unsigned binary representation, padded with a 0 to its left.
+- The sub of a number and its additive inverse must equal 2<sup>k</sup>
 
 ### Additional Resources
 * [Base 5 Number System - Basics | Youtube](https://www.youtube.com/watch?v=qGi29E9q_f0)
