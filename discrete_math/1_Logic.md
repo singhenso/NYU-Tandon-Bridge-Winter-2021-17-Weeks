@@ -12,7 +12,12 @@ Table of Contents
   - [1.2 Evaluating compound propositions](#12-evaluating-compound-propositions)
       - [Evaluating complex compound propositions.](#evaluating-complex-compound-propositions)
   - [1.3 Conditional statements](#13-conditional-statements)
+      - [The converse, contrapositive, and inverse](#the-converse-contrapositive-and-inverse)
+      - [The biconditional operation](#the-biconditional-operation)
+      - [Compound propositions with conditional and biconditional operations](#compound-propositions-with-conditional-and-biconditional-operations)
   - [1.4 Logical equivalence](#14-logical-equivalence)
+      - [Showing logical equivalence using truth tables](#showing-logical-equivalence-using-truth-tables)
+      - [De Morgan's laws](#de-morgans-laws)
   - [1.5 Laws of propositional logic](#15-laws-of-propositional-logic)
   - [1.6 Predicates and quantifiers](#16-predicates-and-quantifiers)
   - [1.7 Quantified statements](#17-quantified-statements)
@@ -25,6 +30,21 @@ Table of Contents
 
 
 ##  1.1 Propositions and logical operations
+| Keyword   | Definition |
+| ------------- |:-------------| 
+| **Logic** | Logic is the study of formal reasoning. |
+| **proposition** |A proposition is a statement that is either true or false. |
+| **truth value** | A proposition's truth value is a value indicating whether the proposition is actually true or false. |
+| **compound proposition** | A compound proposition is created by connecting individual propositions with logical operations. |
+| **logical operation** | A logical operation combines propositions using a particular composition rule. |
+| **conjunction** | The proposition p ∧ q is read "p and q" and is called the conjunction of p and q. |
+| **truth table** | A truth table shows the truth value of a compound proposition for every possible combination of truth | values for the variables contained in the compound proposition. |
+| **T** | T represents true. |
+| **F** | F represents false. |
+| **disjunction** | The proposition p ∨ q is read "p or q", and is called the disjunction of p and q. |
+| **exclusive or**  | The exclusive or of p and q evaluates to true when p is true and q is false or when q is true and p is false. |
+| **inclusive or**  | The inclusive or operation is the same as the disjunction (∨) operation and evaluates to true when one or both of the propositions are true. |
+| **negation** | The negation operation acts on just one proposition and has the effect of reversing the truth value of the proposition. The negation of proposition p is denoted ¬p and is read as "not p". |
 
 - **Logic** is the study of formal reasoning.
 - The most basic element in logic is a proposition. A **proposition** is a statement that is either true or false.
@@ -223,12 +243,130 @@ Exercise: Writing truth tables:
 
 ##   1.3 Conditional statements
 
+| Keyword   | Definition |
+| ------------- |:-------------| 
+| **conditional operation** | The conditional operation is denoted with the symbol →. The proposition p → q is read "if p then q".. |
+| **conditional proposition** | A compound proposition that uses a conditional operation is called a conditional proposition. |
+| **conditional statement** | A conditional proposition expressed in English is sometimes referred to as a conditional statement. |
+| **hypothesis** | In p → q, the proposition p is called the hypothesis, and the proposition q is called the conclusion. |
+| **conclusion** | In p → q, the proposition p is called the hypothesis, and the proposition q is called the conclusion. |
+| **converse** | The converse of p → q is q → p.. |
+| **contrapositive** | The contrapositive of p → q is ¬q → ¬p.. |
+| **inverse** | The inverse of p → q is ¬p → ¬q.. |
+| **biconditional operation** | If p and q are propositions, the proposition "p if and only if q" is expressed with the biconditional operation and is denoted p ↔ q. . |
+| **iff** | The term iff is an abbreviation of the expression "if and only if", as in "p iff q".. |
+
 - The **conditional operation** is denoted with the symbol →. 
 - The proposition p → q is read "if p then q". 
 - The proposition p → q is false if p is true and q is false; otherwise, p → q is true.
 
 
+Truth table for the conditional operation:
+
+| p | q |	p → q |
+| --------|:-----| :-----:| 
+| T | T |	T |
+| T | F |	F |
+| F | T |	T |
+| F | F |	T |
+
+Located below is an illustrated conditional statement
+
+![Counting in base 5](/images/1.3.png)
+
+
+#### The converse, contrapositive, and inverse
+
+Three conditional statements related to proposition p → q are so common that they have special names. 
+- The **converse** of p → q is q → p. 
+- The **contrapositive** of p → q is ¬q → ¬p.The **inverse** of p → q is ¬p → ¬q.
+
+
+| Proposition:| 	  p → q	    | Ex: If it is raining today, the game will be cancelled. | 
+| --------|:-----| :-----:| 
+| **Converse**:| 	  q → p	    | If the game is cancelled, it is raining today. | 
+| **Contrapositive**:| 	  ¬q → ¬p	    | If the game is not cancelled, then it is not raining today. | 
+| **Inverse**:| 	  ¬p → ¬q	    | If it is not raining today, the game will not be cancelled | 
+
+#### The biconditional operation
+
+**Biconditional operation:** the proposition "p if and only if q" is expressed with the biconditional operation and is denoted p ↔ q. 
+
+The proposition p ↔ q is true when p and q have the same truth value and is false when p and q have different truth values.
+
+The term **iff** is an abbreviation of the expression "if and only if", as in "p iff q". 
+
+#### Compound propositions with conditional and biconditional operations
+
+- The proposition p → q ∧ r should be evaluated as p → (q ∧ r). This is because parentheses are not used to indicate order.
+- **Note:** It is good practice to use parentheses to make sure order of operations is correct
+
+
+
+
+| p	| q	| p ↔ q |
+| --------|:-----| :-----:| 
+| T	| T	| T |
+| T	| F	| F |
+| F	| T	| F |
+| F	| F	| T |
+
 ##   1.4 Logical equivalence
+
+| Keyword   | Definition |
+| ------------- |:-------------| 
+| **tautology** | A compound proposition is a tautology if the proposition **is always true**, regardless of the truth value of the individual propositions that occur in it. |
+| **contradiction** | A compound proposition is a contradiction if the proposition is **always false**, regardless of the truth value of the individual propositions that occur in it. |
+| **logically equivalent** | Two compound propositions are said to be logically equivalent if they have the same truth value regardless of the truth values of their individual propositions. |
+| **De Morgan's laws** | De Morgan's laws are logical equivalences that show how to correctly distribute a negation operation inside a parenthesized expression. |
+
+- **p ∨ ¬p** is a simple example of a tautology since the proposition is always true whether p is true or false.
+
+
+|p	| ¬p| 	p ∨ ¬p |
+| --------|:-----| :-----:| 
+|T	| F| 	T |
+|F	| T| 	T |
+
+-  **p ∧ ¬p** is an example of a simple contradiction cus the proposition is false regardless if p is true or false
+
+| p	| ¬p	| p ∧ ¬p |
+| --------|:-----| :-----:| 
+| T	| F	| F |
+| F	| T| 	F |
+
+| Question | Answer | Why |
+| --------|:-----| :-----| 
+p ↔ ¬p | contradiction | The proposition is always false whether p is true or false. Regardless of p's truth value, p can not have the same truth value as ¬p. |
+p → ¬p | neither contradiction or tautology | There is a truth value for p that makes the proposition true, and a truth value for p that makes the proposition false.
+(p ∧ q) → p | tautology | he proposition is true regardless of the truth values for p and q.
+
+#### Showing logical equivalence using truth tables
+
+Two compound propositions are said to be **logically equivalent** if they have the same truth value regardless of the truth values of their individual propositions
+
+- If s and r are two compound propositions, the notation **s ≡ r** is used to indicate that r and s are logically equivalent.
+
+![Counting in base 5](/images/1.4.png)
+
+ Truth table to show:   **¬p ∨ ¬q ≡ ¬(p ∧ q)**.
+
+
+| p	 | q	 | ¬p	 | ¬q	 | p ∧ q	 | ¬(p ∧ q)	 | ¬p ∨ ¬q |
+| --------|:-----| :-----:|  :-----:|  :-----:|  :-----:|  :-----:| 
+| T |	T |	F |	F |	T | F |	F |
+| T |	F |	F |	T |	F | T |	T |
+| F |	T |	T |	F |	F | T |	T |
+| F |	F |	T |	T |	F | T |	T |
+
+#### De Morgan's laws
+ The first De Morgan's law is:
+
+    ¬(p ∨ q)   ≡   (¬p ∧ ¬q)
+
+The second version of De Morgan's law swaps the role of the disjunction and conjunction:
+
+    ¬(p ∧ q)   ≡   (¬p ∨ ¬q)
 
 ##   1.5 Laws of propositional logic
 
