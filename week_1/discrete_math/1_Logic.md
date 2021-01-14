@@ -24,9 +24,6 @@ Table of Contents
   - [1.8 De Morgan's law for quantified statements](#18-de-morgans-law-for-quantified-statements)
   - [1.9 Nested quantifiers](#19-nested-quantifiers)
   - [1.10 More nested quantified statements](#110-more-nested-quantified-statements)
-  - [1.11 Logical reasoning](#111-logical-reasoning)
-  - [1.12 Rules of inference with propositions](#112-rules-of-inference-with-propositions)
-  - [1.13 Rules of inference with quantifiers](#113-rules-of-inference-with-quantifiers)
 
 
 ##  1.1 Propositions and logical operations
@@ -347,6 +344,8 @@ Two compound propositions are said to be **logically equivalent** if they have t
 
 - If s and r are two compound propositions, the notation **s ≡ r** is used to indicate that r and s are logically equivalent.
 
+```s ≡ r is used if s and r are two compound propositions.```
+
 ![Counting in base 5](/images/1.4.png)
 
  Truth table to show:   **¬p ∨ ¬q ≡ ¬(p ∧ q)**.
@@ -354,12 +353,15 @@ Two compound propositions are said to be **logically equivalent** if they have t
 
 | p	 | q	 | ¬p	 | ¬q	 | p ∧ q	 | ¬(p ∧ q)	 | ¬p ∨ ¬q |
 | --------|:-----| :-----:|  :-----:|  :-----:|  :-----:|  :-----:| 
-| T |	T |	F |	F |	T | F |	F |
-| T |	F |	F |	T |	F | T |	T |
-| F |	T |	T |	F |	F | T |	T |
-| F |	F |	T |	T |	F | T |	T |
+| T |	T |	F |	F |	T | **F** |	**F** |
+| T |	F |	F |	T |	F | **T** |	**T** |
+| F |	T |	T |	F |	F | **T** |	**T** |
+| F |	F |	T |	T |	F | **T** |	**T** |
 
 #### De Morgan's laws
+
+**De Morgan's laws** are logical equivalences that show how to correctly distribute a negation operation inside a parenthesized expression.
+
  The first De Morgan's law is:
 
     ¬(p ∨ q)   ≡   (¬p ∧ ¬q)
@@ -370,6 +372,31 @@ The second version of De Morgan's law swaps the role of the disjunction and conj
 
 ##   1.5 Laws of propositional logic
 
+If two propositions are logically equivalent, then one can be substituted for the other within a more complex proposition
+
+  For example p → q ≡ ¬p ∨ q. Therefore,
+
+<span style="color:blue">(p ∨ r)</span> ∧ <span style="color:red">(¬p ∨ q)</span>  ≡  <span style="color:blue">(p ∨ r)</span> ∧ <span style="color:red">(p → q)</span>
+
+In the next example, the logical equivalence p → q ≡ ¬p ∨ q is applied where the variables p and q represent compound propositions:
+<span style="color:blue">(¬t ∧ r)</span> → <span style="color:red">(¬s ∨ t)</span>  ≡  <span style="color:blue">¬(¬t ∧ r )</span> ∨ <span style="color:red">(¬s ∨ t)</span>
+
+| law | variation | variation |
+| --------|:-----| :-----:| 
+| **Idempotent laws**: | p ∨ p ≡ p | p ∧ p ≡ p | 
+| **Associative laws**: | ( p ∨ q ) ∨ r ≡  p ∨ ( q ∨ r ) | ( p ∧ q ) ∧ r ≡  p ∧ (q ∧ r ) | 
+| **Commutative laws**: | p ∨ q ≡ q ∨ p | p ∧ q ≡ q ∧ p | 
+| **Distributive laws**: | p ∨ ( q ∧ r ) ≡ ( p ∨ q ) ∧ ( p ∨ r ) | p ∧ ( q ∨ r ) ≡ ( p ∧ q ) ∨ ( p ∧ r ) | 
+| **Identity laws**: | p ∨ F ≡ p | p ∧ T ≡ p | 
+| **Domination  laws**: | p ∧ F ≡ F | p ∨ T ≡ T | 
+| **Double negation law**: | ¬¬p ≡ p |  | 
+| **Complement laws**: | p ∧ ¬p ≡ F<br> ¬T ≡ F | p ∨ ¬p ≡ T<br> ¬F ≡ T | 
+| **De Morgan's laws**: | ¬( p ∨ q ) ≡ ¬p ∧ ¬q | ¬( p ∧ q ) ≡ ¬p ∨ ¬q | 
+| **Absorption laws**: | p ∨ (p ∧ q) ≡ p | p ∧ (p ∨ q)  ≡ p | 
+| **Conditional identities**: | p → q ≡ ¬p ∨ q | p ↔ q ≡ ( p → q ) ∧ ( q → p ) | 
+
+![Counting in base 5](/images/1.5.png)
+
 ##   1.6 Predicates and quantifiers
 
 ##   1.7 Quantified statements
@@ -379,13 +406,3 @@ The second version of De Morgan's law swaps the role of the disjunction and conj
 ##   1.9 Nested quantifiers
 
 ##   1.10 More nested quantified statements
-
-##   1.11 Logical reasoning
-
-##   1.12 Rules of inference with propositions
-
-##   1.13 Rules of inference with quantifiers
-
-
-
-

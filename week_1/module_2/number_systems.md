@@ -16,6 +16,7 @@
       - [1. N in base b &#x2192; N in decimal](#1-n-in-base-b--n-in-decimal)
       - [2. N in decimal &#x2192; N in base B](#2-n-in-decimal--n-in-base-b)
       - [3. N in Binary &#x2192; N in base Hexadecimal](#3-n-in-binary--n-in-base-hexadecimal)
+      - [Decimal to Hexadecimal](#decimal-to-hexadecimal)
     - [Adding and Subtracting](#adding-and-subtracting)
     - [Signed Numbers](#signed-numbers)
     - [Additional Resources](#additional-resources)
@@ -136,6 +137,10 @@ What comes before 100?
 - The highest single digit is ***F*** which represents "fifteen"
 
 
+Good reference:
+https://www.youtube.com/watch?v=tSLKOKGQq0Y
+![Counting in base 5](/images/hex.png)
+
 ## Converting Between Different Bases
 
 Find the equivalent representations between different bases:
@@ -170,10 +175,22 @@ This method allows you to convert numbers to different bases..
 When going from binary to hex, we go left to right and group the digits into 4. If for some reason a digit is missing from the furthest left side, then add 0.
 
 <code>(0011  1011  1001)<sub>2</sub> = (3b9)<sub>16</sub></code>
+
 ![Counting in base 5](/images/w15.jpg)
 
 The following is Binary to Hexadecimal Conversion
+
+Good Reference is from:https://www.youtube.com/watch?v=s7f6ShhxO2U
+
+![Counting in base 5](/images/hex.png)
+
 ![Counting in base 5](/images/w16.jpg)
+
+
+#### Decimal to Hexadecimal
+
+
+
 
 ### Adding and Subtracting
 
